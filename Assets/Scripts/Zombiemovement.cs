@@ -20,6 +20,5 @@ public class Zombiemovement : MonoBehaviour
         
         direction = Player.transform.position - transform.position;
        transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, speed*Time.deltaTime);
-        transform.LookAt(Player.transform);
     }
 }
