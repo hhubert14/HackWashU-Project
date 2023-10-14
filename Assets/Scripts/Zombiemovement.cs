@@ -5,20 +5,21 @@ using UnityEngine;
 public class Zombiemovement : MonoBehaviour
 {   
     public float speed = 2.0f; 
-    private Transform target;
+    public GameObject Player;
+    private Vector2 direction; 
 
     // Start is called before the first frame update
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform; 
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = target.position - transform.position;
-        direction.Normalize();
-        transform.position += direction * speed * Time.deltaTime; 
-        transform.LookAt(target);
+        
+        direction = Player.transform.position - transform.position;
+       transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, speed*Time.deltaTime);
+        transform.LookAt(Player.transform);
     }
 }
