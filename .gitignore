@@ -1,0 +1,62 @@
+# Unity generated files
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Ll]ibrary/
+[Ll]ocal[Cc]ache/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Ll]ibrary/
+[Uu]serData/
+
+# MonoDevelop generated files
+[Ee]xported[Oo]bj/
+[Ee]xported[Ii]nput/
+[Ee]xported[Tt]emp/
+[Ee]xported[Ss]cripts/
+
+# Visual Studio Code generated files
+.vscode/
+
+# Rider generated files
+.idea/
+
+# User-specific files
+[Ll]ibrary/[Ss]hader[Oo]c[Oo]utput/
+[Ll]ibrary/[Ii]ntermediate[Oo]utput[Oo]bj/
+[Ll]ibrary/[Ss]criptAssemblies/
+[Ll]ibrary/[Ii]nput[Oo]bj/
+[Ll]ibrary/[Bb]uilds/
+[Ll]ibrary/[Bb]uild/
+[Ll]ibrary/Il2cppBuildCache/
+[Ll]ibrary/[Uu]nity[Tt]imeline/
+[Ll]ibrary/[Uu]nityAssemblies/
+[Ll]ibrary/gradle/
+
+# Unity3D asset server
+[Aa]ssets/AssetStoreTools*
+
+# Visual Studio Code directories
+.vscode/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Visual Studio files
+.vscode/
+.vs/  # Visual Studio Code
+.idea/  # JetBrains Rider
+
+# User-specific files
+Library/
+Logs/
+Temp/
