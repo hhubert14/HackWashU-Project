@@ -6,6 +6,7 @@ public class SwordController : MonoBehaviour
 {
     public Transform player; // Reference to the player object
     public float swordLength = 1.0f; // Adjust the sword length to bring it closer to the player
+    public float knockbackForce = 10.0f; // Adjust the knockback force as needed
 
     void Update()
     {
@@ -35,4 +36,16 @@ public class SwordController : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Check for collisions with zombies and apply knockback force
+        if (collision.gameObject.CompareTag("Zombie"))
+        {
+            Rigidbody2D zombieRigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
+            Vector2 direction = (collision.transform.position - transform.position).normalized;
+            zombieRigidbody.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
+        }
+    }
 }
+
