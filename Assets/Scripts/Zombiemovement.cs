@@ -18,14 +18,13 @@ public class ZombieMovement : MonoBehaviour
 
     void Update()
     {
-        if (!isStunned)
-        {
+
             direction = Player.transform.position - transform.position;
             transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
-        }
+        
     }
 
-    public void StunZombie()
+/*    public void StunZombie()
     {
         if (!isStunned)
         {
@@ -47,4 +46,5 @@ public class ZombieMovement : MonoBehaviour
             }
         }
     }
+*/
 }
